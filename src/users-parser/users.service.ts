@@ -1,12 +1,10 @@
 import { Injectable } from '@nestjs/common'
-import { UserEntity } from './entities/user.entity'
-import { IUsersData } from './interfaces/user'
-import { IUserSortParameters } from './interfaces/users.search.params'
+import { UserEntity } from './entities'
+import { IUsersData, IUserSortParameters, IUsersService } from './interfaces'
 import { UsersRopository } from './users.repository'
 import puppeteer from 'puppeteer'
 import { load } from 'cheerio'
 import { SELECTOR, URL } from './constants'
-import { IUsersService } from './interfaces/users.service'
 
 @Injectable()
 export class UsersService implements IUsersService {

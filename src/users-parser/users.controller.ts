@@ -6,7 +6,7 @@ import {
   Inject,
   Query,
 } from '@nestjs/common'
-import { IUsersData } from './interfaces/user'
+import { IUsersData } from './interfaces'
 import { UsersService } from './users.service'
 
 @Controller('/api/users')

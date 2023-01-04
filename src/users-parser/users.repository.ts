@@ -2,9 +2,8 @@ import { Injectable } from '@nestjs/common'
 import { InjectRepository } from '@nestjs/typeorm'
 import { FindManyOptions, Repository } from 'typeorm'
 import { DEFAULT_LIMIT, DEFAULT_SKIP } from './constants'
-import { UserEntity } from './entities/user.entity'
-import { IUsersData } from './interfaces/user'
-import { IUserSortParameters } from './interfaces/users.search.params'
+import { UserEntity } from './entities'
+import { IUsersData, IUserSortParameters } from './interfaces'
 
 @Injectable()
 export class UsersRopository {
